@@ -9,6 +9,8 @@
 <body>
     <div id="app">
         <header-component></header-component>
+        <sidebar-component></sidebar-component>
+        <analytics-component></analytics-component>
     </div>
     <script src="{{ mix('/js/app.js') }}"></script>
 </body>

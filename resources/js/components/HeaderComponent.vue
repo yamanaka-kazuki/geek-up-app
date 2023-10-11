@@ -2,7 +2,7 @@
     <b-navbar type="is-info">
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img :src="'/images/geekup-logo.png'" alt="Geekup's Logo" />
+                Geek up
             </b-navbar-item>
         </template>
         <template #end>
