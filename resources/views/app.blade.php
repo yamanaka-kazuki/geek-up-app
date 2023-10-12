@@ -11,6 +11,7 @@
         <header-component></header-component>
         <sidebar-component></sidebar-component>
         <analytics-component></analytics-component>
+        <latest-study-list-component></latest-study-list-component>
     </div>
     <script src="{{ mix('/js/app.js') }}"></script>
 </body>

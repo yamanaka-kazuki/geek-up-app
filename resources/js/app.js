@@ -17,6 +17,8 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import SidebarComponent from './components/SidebarComponent.vue';
 import FieldComponent from './components/FieldComponent.vue';
 import AnalyticsComponent from './components/AnalyticsComponent.vue';
+import StudyComponent from './components/StudyComponent.vue';
+import LatestStudyListComponent from './components/LatestStudyListComponent.vue';
 
 /**
  * The following block of code may be used to automatically register your
@@ -47,5 +49,7 @@ const app = new Vue({
         SidebarComponent,
         FieldComponent,
         AnalyticsComponent,
+        StudyComponent,
+        LatestStudyListComponent,
     },
 });

@@ -1,6 +1,13 @@
 <template>
     <article class="tile is-child box">
-        <div class="box icon-box"></div>
+        <div class="box icon-box" :style="{ 'background-color': bgcolor }">
+            <b-icon
+                :icon="iconName"
+                size="is-medium"
+                type="is-white"
+                class="icon"
+            ></b-icon>
+        </div>
         <div class="content">
             <p class="title">{{ title }}</p>
             <p class="subtitle">{{ subtitle }}</p>
@@ -13,13 +20,15 @@ export default {
     props: {
         title: String,
         subtitle: String,
+        iconName: String,
+        bgcolor: String,
     },
 };
 </script>
 
 <style scoped>
 .tile {
-    width: 240px;
+    width: 200px;
     position: relative;
 }
 
@@ -30,16 +39,25 @@ export default {
     top: -15px;
 }
 
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .title {
     text-align: right;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     padding: 5px 0;
 }
 
 .subtitle {
     text-align: right;
-    font-size: 36px;
-    padding: 5px 0;
+    font-size: 30px;
+    padding-top: 12px;
 }
 </style>
